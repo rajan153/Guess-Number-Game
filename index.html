@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Guess Number</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="modal">
+        <p id="modalText">Hey, Guess the Correct Number</p>
+        <button id="startBtn">Start New Game</button>
+        <button id="closeGameBtn">Exit</button> 
+      </div>
+      <div id="card">
+        <div id="heading">
+          <h2>Guess The Number</h2>
+        </div>
+        <div id="instructions">
+          <p>Select the number from 1 to 100.</p>
+        </div>
+        <form action="">
+          <input
+            type="text"
+            name="number"
+            id="num"
+            min="1"
+            max="100"
+            placeholder="Enter your number"
+          />
+          <button id="btn">Submit</button>
+        </form>
+        <div id="result">Answer:-</div>
+        <div id="life">
+          <div id="prevNum">Previous Number:-</div>
+          <div id="remainingNum">Life:-</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

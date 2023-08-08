@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: rgba(209, 209, 209, 0.822);
+}
+
+#wrapper {
+    height: 656px;
+    /* background-color: green; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card {
+
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(80, 190, 190, 0.733);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px;
+}
+
+#heading {
+    position: relative;
+    top: -4rem;
+    margin-top: 4rem;
+}
+
+#instructions {
+    position: relative;
+    top: -3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+input[type='text'] {
+    width: 70vw;
+    height: 2rem;
+    padding-left: 1rem;
+    border: 2px solid white;
+    outline: 1px solid black;
+    margin-top: 5rem;
+}
+
+button {
+    width: 40vw;
+    height: 2rem;
+    font-weight: bold;
+    font-size: medium;
+}
+
+button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    outline: 2px solid black;
+    border-radius: 4px;
+}
+
+#result {
+    margin-top: 9rem;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#life {
+    margin-top: 2rem;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#modal {
+    position: absolute;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    height: 200px;
+    width: 360px;
+    box-shadow: -1px 1px 5px black;
+    /* display: none; */
+}
+
+#modal button {
+    margin-top: 1rem;
+    font-size: small;
+}
+
+
+/* MediaQuery */
+
+@media screen and (min-width: 816px) {
+    #card {
+        width: 50vw;
+    }
+
+    input[type="text"] {
+        width: 30vw;
+    }
+
+    button {
+        width: 30vw;
+    }
+
+    #modal button {
+        width: 20vw;
+    }
+
+}
+
+@media screen and (min-width: 1660px) {
+    #card {
+        width: 70vw;
+    }
+
+    input[type="text"] {
+        width: 50vw;
+    }
+
+    button {
+        width: 30vw;
+        height: 2.5rem;
+    }
+
+    #modal button {
+        width: 5vw;
+    }
+
+}
